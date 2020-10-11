@@ -1,7 +1,7 @@
 const request = new require('request');
 
 const info = {
-  username: '201700000000',     //学号
+  username: '201700000000',     //学号 
   password: '000001'            //登陆密码
 }
 
