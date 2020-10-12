@@ -103,12 +103,8 @@ var ddup = async () => {
       return (await send_to_WX('登记失败', '获取最新记录失败。'));
   }
   latest_data_res = JSON.parse(latest_data_res);
-  let d = new Date()
-  let year = d.getFullYear();
-  let month = d.getMonth() + 1;
-  month = month < 10 ? '0' + month : month;
-  let date = d.getDate() < 10 ? '0' + d.getDate() : d.getDate();
-  let tbrq = `${year}-${month}-${date}`;
+  var date = new Date(Date.now() + 1000 * 3600 * 8);
+  let tbrq = date.toISOString().substring(0,10);
   if( tbrq == latest_data_res.tbrq ){
     return (await send_to_WX('今日已登记', `今日已登记: ${tbrq}`));
   }
