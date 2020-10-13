@@ -105,7 +105,7 @@ var ddup = async () => {
   latest_data_res = JSON.parse(latest_data_res);
   var date = new Date(Date.now() + 1000 * 3600 * 8);
   let tbrq = date.toISOString().substring(0,10);
-  if( tbrq == latest_data_res.tbrq ){
+  if( latest_data_res.todaySubmitted == '1' ){
     return (await send_to_WX('今日已登记', `今日已登记: ${tbrq}`));
   }
   for(let attr in latest_data_res){
