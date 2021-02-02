@@ -1,5 +1,9 @@
 # ZAFU_DDUP
 每日一报
+
+# 以下内容需要根据实际所在地作出修改， 经纬度可以在这里获取 => https://jingweidu.bmcx.com/
+![image](https://github.com/Debuffxb/ZAFU_DDUP/blob/main/images/Jietu20210202162841.png)
+
 # 由此导致的一切问题自行负责，与本人无关
 
 ## 收费问题
